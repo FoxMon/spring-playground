@@ -1,4 +1,4 @@
-package com.playground.api.domain.common.entity
+package com.playground.api.domain.entity
 
 import jakarta.persistence.Column
 import jakarta.persistence.EntityListeners
@@ -13,11 +13,6 @@ import java.time.Instant
 @MappedSuperclass
 @EntityListeners(AuditingEntityListener::class)
 abstract class BaseEntity {
-    @CreatedBy
-    @Column(name = "created_by", updatable = false)
-    var createdBy: String? = "System"
-        protected set
-
     @CreatedDate
     @Column(name = "created_at", updatable = false)
     var createdAt: Instant = Instant.now()

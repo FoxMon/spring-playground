@@ -1,4 +1,4 @@
-package com.playground.api.domain.common.entity
+package com.playground.api.domain.entity
 
 
 import jakarta.persistence.Entity
@@ -14,5 +14,5 @@ class User (
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Long? = null
-) {
+) : BaseEntity() {
 }
