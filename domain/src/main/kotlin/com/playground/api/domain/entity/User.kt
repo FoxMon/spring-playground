@@ -13,6 +13,12 @@ import jakarta.persistence.Table
 class User (
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    val id: Long? = null
+    val id: Long? = null,
+
+    val name: String,
+
+    val nicnkame: String,
+
+    val email: String,
 ) : BaseEntity() {
 }
