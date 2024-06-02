@@ -1,7 +1,7 @@
 package com.playground.api.domain.service
 
-import dto.UserResponseDto
+import dto.UserResponse
 
 interface UserService {
-    fun getUserByName(name: String): UserResponseDto
+    fun getUserByName(name: String): UserResponse
 }
